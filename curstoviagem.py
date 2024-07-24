@@ -14,17 +14,17 @@ def calcular_preco_passagem(distancia):
 def main():
     """Função principal para calcular e exibir o preço da passagem."""
     try:
-        # Solicita ao usuário a distância da viagem
+     
         distancia = float(input("Digite a distância da viagem em Km: "))
         
-        # Calcula o preço
+
         preco = calcular_preco_passagem(distancia)
         
-        # Verifica se o preço retornado é uma mensagem de erro ou um valor válido
+   
         if isinstance(preco, str):
             print(preco)
         else:
-            # Exibe o resultado formatado
+     
             print(f"O preço da passagem é R${preco:.2f}")
     
     except ValueError:
